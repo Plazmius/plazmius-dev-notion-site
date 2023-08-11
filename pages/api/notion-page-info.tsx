@@ -15,6 +15,8 @@ import { mapImageUrl } from '@/lib/map-image-url'
 import { notion } from '@/lib/notion-api'
 import { NotionPageInfo } from '@/lib/types'
 
+export const runtime = 'edge';
+
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method !== 'POST') {
     return res.status(405).send({ error: 'method not allowed' })
