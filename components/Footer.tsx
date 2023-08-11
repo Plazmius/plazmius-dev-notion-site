@@ -35,7 +35,7 @@ export const FooterImpl: React.FC = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.copyright}>Copyright 2022 {config.author}</div>
+      <div className={styles.copyright}>Copyright 2023 {config.author} | <a href='https://github.com/transitive-bullshit/nextjs-notion-starter-kit' className={styles.twitter}>View source (credits to Travis Fischer) </a> </div>
 
       <div className={styles.settings}>
         {hasMounted && (
