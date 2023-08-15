@@ -96,15 +96,12 @@ export default async function OGImage(req: NextRequest) {
               textAlign: 'center'
             }}
           >
-            {pageInfo.detail && (
-              <div style={{ fontSize: 32, opacity: 0 }}>{pageInfo.detail}</div>
-            )}
-
             <div
               style={{
-                fontSize: 70,
+                fontSize: 56,
                 fontWeight: 700,
-                fontFamily: 'Inter'
+                fontFamily: 'Inter',
+                textOverflow: 'ellipsis',
               }}
             >
               {pageInfo.title}
